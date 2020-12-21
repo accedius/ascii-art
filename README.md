@@ -5,9 +5,9 @@
 
 The idea of this project is to load images, translate them into ASCII ART images, optionally apply filters, and save them. (https://courses.fit.cvut.cz/BI-OOP/projects/ASCII-art.html)
 
-## How to do it
+## Application Capabilities
 
-1. **Read [the instructions](https://courses.fit.cvut.cz/BI-OOP/projects/ASCII-art.html)**
-2. Play [lofi hip hop radio](https://www.youtube.com/watch?v=5qap5aO4i9A)
-3. [???](https://www.youtube.com/watch?v=ZXsQAXx_ao0)
-4. Profit
+* Loads image (accepts .png, .jpeg, .jpg)
+* Converts image to ASCII image
+* Prints image to console
+* Exports image to file 
