@@ -1,6 +1,6 @@
 package image
 
-import entity.atomic.{PixelAscii, PixelGrayscale}
+import entity.atomic.{PixelAscii, PixelGrayscale, PixelRgb}
 import entity.canvas.PixelGrid
 import entity.image.{ImageAscii, ImageGrayscale, ImageRgb}
 import io.loader.FileLoader
@@ -20,4 +20,10 @@ trait ImageFactory {
 
   def makeGridAsciiFromArray(pixels: Array[Array[Char]]): PixelGrid[PixelAscii] =
     new PixelGrid[PixelAscii](pixels.map(_.map(i => PixelAscii(i))))
+
+  def makeImageRgbFromArray(pixels: Array[Array[(Int, Int, Int)]]): ImageRgb =
+    new ImageRgb(makeGridRgbFromArray(pixels))
+
+  def makeGridRgbFromArray(pixels: Array[Array[(Int, Int, Int)]]): PixelGrid[PixelRgb] =
+    new PixelGrid[PixelRgb](pixels.map(_.map(depths => PixelRgb(depths._1, depths._2, depths._3))))
 }
