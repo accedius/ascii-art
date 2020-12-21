@@ -1,5 +1,8 @@
 package entity.atomic.helper
 
+/**
+ * Trait for pixel classes, which are composed from RGB values
+ */
 trait CompositeRgb {
   val red: ColorRed
   val green: ColorGreen

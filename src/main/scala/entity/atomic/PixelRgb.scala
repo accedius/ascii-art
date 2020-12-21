@@ -1,7 +1,7 @@
 package entity.atomic
 
 import entity.atomic.helper.{ColorBlue, ColorGreen, ColorRed, CompositeRgb}
-import entity.atomic.RgbToGrayscale.ops.ToGreyscaleOps
+import entity.atomic.ToGrayscale.ops.ToGreyscaleOps
 
 class PixelRgb (private val redValue: Int, private val greenValue: Int, private val blueValue: Int) extends CompositeRgb with TPixel {
   override val red: ColorRed = new ColorRed(redValue)

@@ -6,11 +6,18 @@ import io.client.parser.CommandParser.availableCommands
 import io.exporter.{ConsoleExporter, FileExporter}
 import io.loader.FileLoader
 
+/**
+ * Handles command evaluation
+ * @param commandSeq - Sequence of commands to execute
+ */
 case class CommandHandler(private val commandSeq: CommandSeq) {
   private val imageOriginal = loadImage
   private val imageGrayscale = imageOriginal.toGrayscale
   private val imageAscii = imageGrayscale.toAscii
 
+  /**
+   * Runs evaluation for given command sequence
+   */
   def run: Unit = {
     commandSeq.commands.foreach { command =>
       command.name match {

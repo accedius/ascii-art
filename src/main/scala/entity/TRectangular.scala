@@ -1,5 +1,9 @@
 package entity
 
+/**
+ * Trait for classes with rectangular structure
+ * Provides checking against inner bounds (width as columns, height as rows)
+ */
 trait TRectangular extends TCheckable[Int] {
   def width: Int
   def height: Int

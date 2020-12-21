@@ -1,5 +1,9 @@
 package entity
 
+/**
+ * Trait for classes with grid-like structure
+ * @tparam ELEMENT - class type of Elements
+ */
 trait TGrid[ELEMENT] extends TRectangular with TComposed[ELEMENT, Int] {
   protected def elements: Array[Array[ELEMENT]]
 

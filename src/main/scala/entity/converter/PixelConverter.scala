@@ -1,6 +1,6 @@
 package entity.converter
 
-import entity.atomic.RgbToGrayscale.ops.ToGreyscaleOps
+import entity.atomic.ToGrayscale.ops.ToGreyscaleOps
 import entity.atomic.{PixelAscii, PixelGrayscale, PixelRgb}
 import entity.converter.helper.ConversionTableToAscii
 

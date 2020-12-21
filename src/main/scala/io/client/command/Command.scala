@@ -1,5 +1,10 @@
 package io.client.command
 
+/**
+ * Command storing class
+ * @param name - name of the command
+ * @param parameter - optional parameter for the command
+ */
 case class Command (name: String, parameter: Option[String] = Option.empty) {
   def getParameter: String = parameter.getOrElse(throw new IllegalArgumentException("Command " + name + " should have one argument!"))
 

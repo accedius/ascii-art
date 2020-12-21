@@ -4,6 +4,9 @@ import entity.{TComposed, TRectangular}
 import entity.atomic.TPixel
 import entity.canvas.PixelGrid
 
+/**
+ * Base trait for Raster Images
+ */
 trait TRasterImage extends TRectangular {
   protected val pixelGrid: PixelGrid[_ <: TPixel]
 

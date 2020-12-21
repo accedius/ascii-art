@@ -1,6 +1,6 @@
 package entity.canvas
 
-import entity.{TComposed, TGrid, TRectangular, TTransformable}
+import entity.{TComposed, TGrid, TRectangular}
 import entity.atomic.{PixelAscii, PixelGrayscale, TPixel}
 import TRectangular.startRowIndex
 import TRectangular.startColumnIndex
