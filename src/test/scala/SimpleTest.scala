@@ -1,10 +1,10 @@
-package MainTest
+package SimpleTest
 
 import org.scalatest.FunSuite
 
 
-class MainTest extends FunSuite {
-  /*test("Foo"){
-      assert(Foos.Foo)
-  }*/
+class SimpleTest extends FunSuite {
+  test("Foo"){
+      assert(2 + 2 == 4)
+  }
 }
